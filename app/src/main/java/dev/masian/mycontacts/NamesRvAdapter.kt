@@ -13,11 +13,11 @@ class NamesRvAdapter(var contactLists: List<ContactData>):RecyclerView.Adapter<C
     }
 
     override fun onBindViewHolder(holder: ContactViewHolder, position: Int) {
-        var tweet =contactLists[position]
+        var contactt =contactLists[position]
 //        holder.binding.ivAvatar.toString()
-        holder.binding.tvName.text=tweet.displayName
-        holder.binding.tvEmail.text=tweet.email
-        holder.binding.tvNumber.text=tweet.number
+        holder.binding.tvName.text=contactt.displayName
+        holder.binding.tvEmail.text=contactt.email
+        holder.binding.tvNumber.text=contactt.number
 
 
     }

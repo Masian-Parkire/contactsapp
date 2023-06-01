@@ -18,9 +18,9 @@
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="38dp"
-        android:layout_height="15dp"
-        android:layout_marginStart="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="4dp"
         android:text="name"
         app:layout_constraintStart_toEndOf="@+id/ivAvatar"
@@ -30,8 +30,8 @@
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="44dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivAvatar" />
@@ -40,8 +40,57 @@
         android:id="@+id/tvNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="24dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivAvatar" />
+
+    <ImageView
+        android:id="@+id/ivText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivVideo"
+        app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber"
+        app:srcCompat="@drawable/baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/ivVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivCall"
+        app:layout_constraintStart_toEndOf="@+id/ivText"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber"
+        app:srcCompat="@drawable/baseline_video_call_24" />
+
+    <ImageView
+        android:id="@+id/ivCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivError"
+        app:layout_constraintStart_toEndOf="@+id/ivVideo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_phone_24" />
+
+    <ImageView
+        android:id="@+id/ivError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="119dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivCall"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_error_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
